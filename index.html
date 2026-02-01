@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MusicBrainz Explorer</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<aside class="sidebar">
+  <h1>🎧 Music</h1>
+
+  <input id="search" placeholder="Search artist…" />
+  <button id="searchBtn">Search</button>
+
+  <div class="section">
+    <h3>Library</h3>
+    <div id="library"></div>
+  </div>
+
+  <button id="toggleTheme">Toggle Theme</button>
+</aside>
+
+<main>
+  <section id="artist"></section>
+
+  <section id="grid" class="grid"></section>
+
+  <section id="albumPage" class="album-page">
+    <a href="#" id="back">← Back</a>
+    <div id="album"></div>
+    <input id="trackSearch" placeholder="Search tracks…" />
+    <div id="tracks"></div>
+  </section>
+</main>
+
+<div class="mini-player" id="player">
+  <button id="prev">⏮</button>
+  <button id="playPause">▶</button>
+  <button id="next">⏭</button>
+  <span id="nowPlaying">Nothing playing</span>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
